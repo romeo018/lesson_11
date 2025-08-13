@@ -1,11 +1,12 @@
-import my_module
-
-
-print(my_module.summa(10, 20))
-
+import tkinter as tk
+from my_module import study_entry
 
 
 if __name__ == '__main__':
-    print("Самостоятельный запуск")
-else:
-    print("Импортированный модуль")
+    root = tk.Tk()
+    root.title("Изучение элементов GUI")
+    root.geometry("400x300")
+    tk.Button(root, text="Изучение полей ввода", command=study_entry).pack(pady=20)
+    
+    
+    root.mainloop()
