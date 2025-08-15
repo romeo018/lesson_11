@@ -7,7 +7,7 @@ def study_radio():
     window.title("Радиокнопки")
     window.geometry("300x200")
 
-    var = tk.StringVar(value="python")
+    var = tk.StringVar()
 
     tk.Label(window, text="Выберите язык:").pack(pady=5)
     tk.Radiobutton(window, text="Python", variable=var, value="python").pack()
