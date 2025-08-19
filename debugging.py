@@ -11,6 +11,7 @@ handler.setFormatter(colorlog.ColoredFormatter(
 logger = colorlog.getLogger(__name__)
 logger.addHandler(handler)
 logger.setLevel(logging.DEBUG)
+logger.propagate = False  # отключаем передачу в родительский логгер
 
 # некритические ошибки
 logger.debug("Подробная информация для отладки")           # DEBUG
